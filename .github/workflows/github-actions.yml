@@ -4,7 +4,7 @@ name: CI
 
 jobs:
   build:
-    name: build ls-rs
+    name: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,7 +17,7 @@ jobs:
           args: --release --all-features
 
   test:
-    name: test ls-rs
+    name: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
